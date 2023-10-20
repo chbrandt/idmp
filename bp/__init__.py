@@ -1,12 +1,14 @@
-def generate_birthdays(N):
-    import random
-    return [ random.randint(1,365) for i in range(N) ]
-
-def check_birthdays(birthdays):
-    unique_birthdays = set(birthdays)
-    return len(birthdays) != len(unique_birthdays)
+"""
+Birthday Problem implementation package
+"""
 
 def main(N=23, X=100):
+    """
+    Main function of BP
+
+    - N
+    -X
+    """
     cnt = 0
     for i in range(X):
 
